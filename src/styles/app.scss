@@ -4,5 +4,15 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3 {
+  color: rgb(59, 59, 59);
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
 @import "./songs";
 @import "./player";
+@import "./library";

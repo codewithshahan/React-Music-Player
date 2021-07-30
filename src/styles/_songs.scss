@@ -1,8 +1,17 @@
 .songs-container {
   display: flex;
-  background-color: lightblue;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   min-height: 60vh;
+  img {
+    width: 20%;
+    border-radius: 50%;
+  }
+  h2 {
+    padding: 3rem 1rem 1rem 1rem;
+  }
+  h3 {
+    font-display: 1rem;
+  }
 }
