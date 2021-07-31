@@ -7,6 +7,9 @@
   background-color: lightcyan;
   box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.541);
   overflow: scroll;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  opacity: 0;
   h2 {
     padding: 1rem 2rem;
   }
@@ -56,4 +59,9 @@
 
 .selected {
   background-color: rgba(22, 208, 255, 0.404);
+}
+
+.library-active {
+  transform: translateX(0%);
+  opacity: 1;
 }
