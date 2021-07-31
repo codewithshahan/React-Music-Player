@@ -40,6 +40,7 @@ function App(props) {
         songs={songs}
         audioRef={audioRef}
         isPlaying={isPlaying}
+        setSongs={setSongs}
       />
       <audio
         onTimeUpdate={timeUpdateHandler}
