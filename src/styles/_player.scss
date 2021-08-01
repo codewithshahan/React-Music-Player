@@ -15,9 +15,11 @@
     p {
       padding: 0 1rem;
     }
-    .range {
+    input {
+      -webkit-appearance: none;
+      cursor: pointer;
       width: 100%;
-      padding: 2rem 0;
+      background: lightblue;
     }
   }
   .song-control {
@@ -25,5 +27,43 @@
     width: 50%;
     cursor: pointer;
     justify-content: space-between;
+  }
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+}
+
+.track {
+  width: 100%;
+  height: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.animate-track {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(230, 230, 230);
+  transform: translateX(0%);
+  pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+  .time-control {
+    width: 90%;
+  }
+  .song-control {
+    width: 90%;
   }
 }

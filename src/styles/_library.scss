@@ -19,12 +19,13 @@
   display: flex;
   padding: 1rem 2rem;
   align-items: center;
+  transition: background 0.3s ease;
 
   img {
     width: 30%;
   }
   &:hover {
-    background-color: rgba(118, 180, 241, 0.479);
+    background: rgba(142, 198, 255, 0.322);
     cursor: pointer;
   }
 }
@@ -61,7 +62,13 @@
   background-color: rgba(22, 208, 255, 0.404);
 }
 
-.library-active {
+.library-toggle {
   transform: translateX(0%);
   opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .library {
+    width: 100%;
+  }
 }

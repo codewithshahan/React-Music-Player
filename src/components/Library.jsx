@@ -10,7 +10,7 @@ function library({
   libraryStatus,
 }) {
   return (
-    <div className={`library ${libraryStatus ? "library-active" : ""}`}>
+    <div className={`library ${libraryStatus ? "library-toggle" : ""}`}>
       <h2>Librar</h2>
       <div>
         {songs.map((song) => (
